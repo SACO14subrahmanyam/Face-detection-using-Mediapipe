@@ -23,13 +23,14 @@ while 1:
             ih, iw, ic = img.shape
             bbox = int(bboxC.xmin * iw), int(bboxC.ymin * ih), \
                    int(bboxC.width * iw), int(bboxC.height * ih)
-            #these are the length and width and height of the box
+            #these are the length and width and height of the box and give the exact pixel values of the box
             cv2.rectangle(img, bbox, (255, 0, 255), 2)
             #In the above it will draw the box detected image and (255,0,255)
 
     cv2.imshow("Image", img)
     # it is displaying the images on monitor or screen
     cv2.waitKey(1)
+    
 
 
 
