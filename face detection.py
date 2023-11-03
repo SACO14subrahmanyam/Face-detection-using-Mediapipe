@@ -30,7 +30,7 @@ while 1:
     cv2.imshow("Image", img)
     # it is displaying the images on monitor or screen
     cv2.waitKey(1)
-    
+    #wait for a specified time
 
 
 
